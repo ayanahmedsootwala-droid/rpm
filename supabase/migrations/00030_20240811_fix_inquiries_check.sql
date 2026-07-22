@@ -1,0 +1,2 @@
+ALTER TABLE public.inquiries DROP CONSTRAINT inquiries_status_check;
+ALTER TABLE public.inquiries ADD CONSTRAINT inquiries_status_check CHECK (status IN ('new', 'read', 'in_progress', 'responded', 'replied', 'closed'));
