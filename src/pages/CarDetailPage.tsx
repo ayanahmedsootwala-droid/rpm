@@ -306,9 +306,8 @@ export default function CarDetailPage() {
                         <FileText className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-sm">VIN History Report</p>
-                        <p className="text-xs text-muted-foreground mt-1">Clean title, no accidents reported. 2 previous owners.</p>
-                        <Button variant="link" type="button" onClick={() => {}} className="px-0 h-auto text-xs mt-2 text-primary">View Full Report</Button>
+                        <p className="font-semibold text-sm">RPM Certified</p>
+                        <p className="text-xs text-muted-foreground mt-1">Professionally inspected and approved to meet RPM Motors' quality standards.</p>
                       </div>
                     </div>
                     {/* Inspection */}
@@ -317,9 +316,8 @@ export default function CarDetailPage() {
                         <Check className="w-5 h-5 text-success" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-sm">150-Point Inspection</p>
-                        <p className="text-xs text-muted-foreground mt-1">Passed comprehensive dealer inspection. Mechanically sound.</p>
-                        <Button variant="link" type="button" onClick={() => {}} className="px-0 h-auto text-xs mt-2 text-primary">Download Certificate</Button>
+                        <p className="font-semibold text-sm">Trust & Verification</p>
+                        <p className="text-xs text-muted-foreground mt-1">Ownership, documentation and vehicle details verified for complete peace of mind.</p>
                       </div>
                     </div>
                     {/* Damage */}
@@ -328,8 +326,8 @@ export default function CarDetailPage() {
                         <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-sm">Damage Assessment</p>
-                        <p className="text-xs text-muted-foreground mt-1">Minor scratches on rear bumper (see gallery). No structural damage.</p>
+                        <p className="font-semibold text-sm">Ready for Delivery</p>
+                        <p className="text-xs text-muted-foreground mt-1">Fully prepared, professionally detailed, and ready to drive home today.</p>
                       </div>
                     </div>
                   </div>
