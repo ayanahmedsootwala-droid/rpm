@@ -506,7 +506,7 @@ function BrowseByType() {
 /* ── Why Us ─────────────────────────────────────────── */
 function WhyUs() {
   const { getSetting } = useSiteSettings();
-  const siteName = getSetting('site_name', 'XYZ Automobiles');
+  const siteName = getSetting('site_name', 'RPM MOTORS');
   const features = [
     { icon: Shield,     title: 'Verified Listings',    desc: 'Every vehicle is inspected and verified by our expert team before listing.' },
     { icon: Zap,        title: 'Real-Time Auctions',   desc: 'Live bidding with instant updates, automated timers, and proxy bids.' },
