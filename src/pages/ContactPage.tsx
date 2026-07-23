@@ -20,11 +20,11 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const { getSetting } = useSiteSettings();
 
-  const siteName    = getSetting('site_name',       'XYZ Automobiles');
-  const phone       = getSetting('contact_phone',   '+92 300 1234567');
+  const siteName    = getSetting('site_name',       'RPM MOTORS');
+  const phone       = getSetting('contact_phone',   '+92 321 8284748');
   const phone2      = getSetting('contact_phone_2', '');
-  const email       = getSetting('contact_email',   'info@xyzautos.com');
-  const address     = getSetting('contact_address', 'Lahore, Pakistan');
+  const email       = getSetting('contact_email',   'info@rpmmotorskhi.com');
+  const address     = getSetting('contact_address', 'Karachi, Pakistan');
   const whatsapp    = getSetting('contact_whatsapp', phone).replace(/[^0-9]/g, '');
   const tagline     = getSetting('site_tagline',    "Pakistan's premier luxury automotive marketplace.");
   const igUrl       = getSetting('social_instagram', '#');
