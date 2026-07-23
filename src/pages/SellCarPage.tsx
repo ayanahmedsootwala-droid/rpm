@@ -284,15 +284,18 @@ export default function SellCarPage() {
               <div className="space-y-1.5">
                 <Label>Year <span className="text-destructive">*</span></Label>
                 <Select value={form.year} onValueChange={v => set('year', v)}>
-                  <SelectTrigger className="h-10"><SelectValue placeholder="Year" /></SelectTrigger>
+                  <SelectTrigger className="h-10"><SelectValue placeholder="Model Year" /></SelectTrigger>
                   <SelectContent>{Array.from({ length: 31 }, (_, i) => 2026 - i).map(y => <SelectItem key={y} value={String(y)}>{y}</SelectItem>)}</SelectContent>
                 </Select>
               </div>
               <div className="space-y-1.5">
-                <Label>Condition <span className="text-destructive">*</span></Label>
-                <Select value={form.condition} onValueChange={v => set('condition', v)}>
-                  <SelectTrigger className="h-10"><SelectValue placeholder="Condition" /></SelectTrigger>
-                  <SelectContent>{CONDITIONS.map(c => <SelectItem key={c} value={c}>{c}</SelectItem>)}</SelectContent>
+                <Label>Registration Year <span className="text-destructive">*</span></Label>
+                <Select value={form.registration_year} onValueChange={v => set('registration_year', v)}>
+                  <SelectTrigger className="h-10"><SelectValue placeholder="Reg. Year" /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Unregistered">Unregistered</SelectItem>
+                    {Array.from({ length: 31 }, (_, i) => 2026 - i).map(y => <SelectItem key={y} value={String(y)}>{y}</SelectItem>)}
+                  </SelectContent>
                 </Select>
               </div>
               <div className="space-y-1.5">
@@ -311,13 +314,10 @@ export default function SellCarPage() {
                 <OtherInput trigger={form.color} value={form.color_other} onChange={v => set('color_other', v)} placeholder="Enter color" height="h-10" />
               </div>
               <div className="space-y-1.5">
-                <Label>Registration Year <span className="text-destructive">*</span></Label>
-                <Select value={form.registration_year} onValueChange={v => set('registration_year', v)}>
-                  <SelectTrigger className="h-10"><SelectValue placeholder="Reg. Year" /></SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="Unregistered">Unregistered</SelectItem>
-                    {Array.from({ length: 31 }, (_, i) => 2026 - i).map(y => <SelectItem key={y} value={String(y)}>{y}</SelectItem>)}
-                  </SelectContent>
+                <Label>Condition <span className="text-destructive">*</span></Label>
+                <Select value={form.condition} onValueChange={v => set('condition', v)}>
+                  <SelectTrigger className="h-10"><SelectValue placeholder="Condition" /></SelectTrigger>
+                  <SelectContent>{CONDITIONS.map(c => <SelectItem key={c} value={c}>{c}</SelectItem>)}</SelectContent>
                 </Select>
               </div>
               <div className="space-y-1.5">
@@ -325,7 +325,7 @@ export default function SellCarPage() {
                 <Input
                   value={form.registration_number}
                   onChange={e => set('registration_number', e.target.value.toUpperCase())}
-                  placeholder="e.g. ABC-123"
+                  placeholder=""
                   className="h-10 font-mono tracking-wide"
                   maxLength={15}
                 />
