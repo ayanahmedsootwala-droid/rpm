@@ -358,7 +358,7 @@ export default function CarDetailPage() {
                       </div>
                     </div>
                   ) : (
-                    <p className="text-sm text-muted-foreground">Seller information not available.</p>
+                    <p className="text-sm text-muted-foreground">Seller Information</p>
                   )}
                 </TabsContent>
               </Tabs>
