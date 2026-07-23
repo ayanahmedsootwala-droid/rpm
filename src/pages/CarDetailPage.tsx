@@ -248,7 +248,7 @@ export default function CarDetailPage() {
                   {['description', 'specs', 'reports', 'seller'].map(tab => (
                     <TabsTrigger key={tab} value={tab}
                       className="capitalize text-sm pb-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-foreground data-[state=active]:text-foreground data-[state=active]:shadow-none bg-transparent text-muted-foreground">
-                      {tab === 'seller' ? 'Seller Info' : tab === 'reports' ? 'Vehicle Reports' : tab}
+                      {tab === 'seller' ? 'Seller Info' : tab === 'reports' ? 'Why RPM?' : tab}
                     </TabsTrigger>
                   ))}
                 </TabsList>
