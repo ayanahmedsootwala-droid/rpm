@@ -99,7 +99,7 @@ export default function AboutUsPage() {
             </div>
             <div className="flex-1 w-full relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=2071&auto=format&fit=crop" alt="Our Showroom" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1668639369890-09ce48dc3ca1?q=80&w=2071&auto=format&fit=crop" alt="Our Showroom" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
