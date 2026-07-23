@@ -302,8 +302,8 @@ export default function CarDetailPage() {
                   <div className="space-y-4">
                     {/* VIN Check */}
                     <div className="flex items-start gap-4 p-5 border border-border rounded-xl">
-                      <div className="w-10 h-10 bg-blue-50 dark:bg-blue-950/20 rounded-lg flex items-center justify-center shrink-0">
-                        <FileText className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center shrink-0">
+                        <Check className="w-5 h-5 text-success" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="font-semibold text-sm">RPM Certified</p>
@@ -322,8 +322,8 @@ export default function CarDetailPage() {
                     </div>
                     {/* Damage */}
                     <div className="flex items-start gap-4 p-5 border border-border rounded-xl">
-                      <div className="w-10 h-10 bg-amber-50 dark:bg-amber-950/20 rounded-lg flex items-center justify-center shrink-0">
-                        <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+                      <div className="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center shrink-0">
+                        <Check className="w-5 h-5 text-success" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="font-semibold text-sm">Ready for Delivery</p>
