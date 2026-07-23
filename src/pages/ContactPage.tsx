@@ -173,13 +173,13 @@ export default function ContactPage() {
                         </div>
                         <div className="space-y-1.5">
                           <Label>{t('email')} <span className="text-destructive">*</span></Label>
-                          <Input type="email" value={form.email} onChange={e => update('email', e.target.value)} placeholder="ahmed@example.com" required />
+                          <Input type="email" value={form.email} onChange={e => update('email', e.target.value)} placeholder="ahmed@gmail.com" required />
                         </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-1.5">
                           <Label>{t('phone')}</Label>
-                          <Input value={form.phone} onChange={e => update('phone', e.target.value)} placeholder="+92 300 1234567" />
+                          <Input value={form.phone} onChange={e => update('phone', e.target.value)} placeholder="" required />
                         </div>
                         <div className="space-y-1.5">
                           <Label>{t('subject')}</Label>
